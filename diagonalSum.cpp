@@ -16,9 +16,10 @@ void diagonalSum(int matrix[][4], int n){
 
     //0(N)
     for(int i=0;i<n;i++){
-        diagSum += matrix[i][i];
+        diagSum += matrix[i][i]; //pd
+
         if(i != n-i-1){
-            diagSum += matrix[i][n-i-1];
+            diagSum += matrix[i][n-i-1]; //sd
         }
     }
     cout<<"Diagonal Sum: "<<diagSum<<"\n";
