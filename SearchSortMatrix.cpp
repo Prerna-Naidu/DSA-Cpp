@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void SearchSortedMatrix(int matrix[][4], int m, int n, int key){
-    for(int i=0; i<m; i++){
+    for(int i=0; i<m; i++){  // O(mlogn)
         int start=0, end=n-1;
         while(start<=end){
         int mid=(start+end)/2;
